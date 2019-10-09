@@ -1,0 +1,25 @@
+
+
+
+
+observation : 
+1. The wine rating varied from 3 to 9. hence, we can say that the rating index was from 0 to 10.
+2. As the pH of acidic solutions is below 7. Hence for wine, we got pH of below 4.
+3. to apply classifiction on pH, we converted to a scale of (0, if range is 2-3, else 1, if range is 3-4)
+4. Now we have 2 scenarios.
+	(a). regression on pH scale.
+	(b). classification on pH_range, quality.
+5. Scaling is needed here, as we don't know the unit of the columns.
+ Hence we have to bring every column on same scale.
+
+
+conclussion : 
+1. The column "total_sulfur_dioxide" has p-value of 0.177 so we are removing it in Regression methods.
+2. Decision tree is giving worse result as comapred to Linear Regression. 
+3. We might be putting wrong approach with column "pH" as regressor methods give poor result.
+3. SVM cannot be performed on column "quality", because it is multi-class
+4. In DecisionTree Classifier, AUC decreased from 0.72 to 0.64, after tuning of the model
+5. This classification approach is correct. Further, "ph_range" (accuracy = 0.93)gives out better prediction as compared to "quality"(accuracy = 0.72)
+6. While calculating pH, "quality" and "total_sulfur_dioxide" doesn't play a significant roles
+7. While calculating quality, pH" doesn't play a significant role
+
